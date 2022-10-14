@@ -1,54 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+	<link rel="stylesheet" href="styles.css">
     <style>
-    .center{
-        margin: auto;
-        width: 10%;
-        border: 10px solid black;
-        padding: 50px;
-      }
+        .center {
+            margin: auto;
+            width: 80%;
+            border: 10px solid black;
+            padding: 50px;
+        }
+
         form:hover {
-        background-color: lightblue;
+            background-color: lightblue;
         }
     </style>
 </head>
+
 <body>
     <form action="/action_page.php" class="center">
-        <div>
+        <div class="animated_rainbow_3">Dog Adoption Application</div>
+    <div>
         <label for="fname">Name</label>
-        <input type="text" id="name" name="name" placeholder="Name"
-        patternholder="[a-z]{10}">
+        <input type="text" id="name" name="name" placeholder="Name">
+
     </div>
     <div>
         <label for="phone">Phone</label>
-        <input type="text" id="phone" name="phone" placeholder="Phone Number"
-        pattern="[0-9]{10}">
+        <input type="text" id="phone" name="phone" placeholder="Phone Number">
     </div>
     <div>
         <label for="address">Address</label>
         <input type="text" id="address" name="address" placeholder="Address">
-        <address></address>
     </div>
     <div>
-        
-        <label>Have you ever lived with a Dog before?</label>
-        <input type="checkbox" id="checkbox"><br>
+
+        <label for="checkbox">Have you ever lived with a Dog before?</label>
+        <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?"><br>
     </div>
+
+    <label for="multiselect">Please select your preferred breeds</label>
+    <select name="breeds" id="breeds" multiple>
         
-        <label>Please select your preferred breeds</label><br>
-        <input type="checkbox" id="multiSelect" name="breed" value="dog">
-        <label for="dog breed">German Shepherd</label><br> 
-        <input type="checkbox" id="multiSelect" name="breed" value="dog">
-        <label for="dog breed">Indian Spitz</label><br>
-        <input type="checkbox" id="multiSelect" name="breed" value="dog">
-        <label for="dog breed">Pomeranian</label><br>
-        <input type="submit" value="Submit">
-      </form> 
-    
+        <option type="checkbox" value="checkbox" id="breed 1">German Shepherd</option>
+        <option type="checkbox" value="checkbox" id="breed 2">Indian Spitz</option>
+        <option type="checkbox" value="checkbox" id="breed 3">Pomeranian</option>
+    </select><br>
+    <marquee behavior="alternate" direction="left" scrollamount="15" >Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</marquee>
+
+    <input type="submit" value="Submit" id="submit">
+    </form><br><br><br>
 </body>
+
 </html>
